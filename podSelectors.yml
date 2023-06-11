@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: abcpod
+  labels:
+    pod: selector
+    env: label4pod
+spec:
+    containers:
+       - name: cont1
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello-Moto; sleep 5 ; done"]
+       - name: cont2
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello-abd; sleep 5 ; done"]
+

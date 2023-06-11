@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod1
+spec:
+  containers:
+    - name: cont1
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true; do echo Hey Abd; sleep 5 ; done"]
+  restartPolicy: Never         # Defaults to Always
+
