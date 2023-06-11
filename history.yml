@@ -1,0 +1,42 @@
+git remote add origin https://github.com/ameerabdulla/kubernetes.git
+  182  git push origin master
+  183  git push -u origin master
+  184  git push -u origin main
+  185  kubectl get pods
+  186  kubectl get nodes
+  187  vim createpod.yml
+  188  kubectl apply -f createpod.yml
+  189  get pods
+  190  kubectl get pods
+  191  kubectl exec testpod -c cont1 -it -- /bin/bash
+  192  vim createpod.yml
+  193  kubectl apply -f createpod.yml
+  194  kubectl get pods
+  195  kubectl delete pods testpod
+  196  kubectl exec pod1 -c cont1 -it -- /bin/bash
+  197  kubectl describe pod1
+  198  kubectl describe pod pod
+  199  kubectl describe pod pod1
+  200  kubectl logs -f pod1
+  201  ls
+  202  vim podSelectors.yml
+  203  kubectl apply -f podSelectors.yml
+  204  kubectl get pods
+  205  vim podSelectors.yml
+  206  kubectl delete pod pod1
+  207  kubectl get pods --show-label
+  208  kubectl get pods --show-labels
+  209  kubectl get pods -l env=label4pod
+  210  kubectl get nodes
+  211  kubectl get pods
+  212  kubectl exec abcpod -c cont2 -- -it /bin/bash
+  213  kubectl exec abcpod -it -c cont2 -- /bin/bash
+  214  kubectl get pods -l 'env notin(abc)'
+  215  kubectl get pods -l 'env in(abc)'
+  216  kubectl get pods -l 'pod in(abc)'
+  217  kubectl get pods -l 'pod in(selector)'
+  218  kubectl get pods -l pod=selector
+  219  kubectl get pods -l pod!=abcselector
+  220  kubectl get pods -l pod=abcselector
+  221  history
+
