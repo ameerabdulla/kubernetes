@@ -1,6 +1,6 @@
 set -euxo pipefail
 
-MASTER_IP="172.31.37.16"
+MASTER_IP="172.31.39.199"
 NODENAME=$(hostname -s)
 POD_CIDR="192.168.0.0/16"
 

@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod1
+  labels:
+    podkey: podvalue
+spec:
+    containers:
+       - name: cont1
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello-Abd; sleep 5 ; done"]
+    nodeSelector:
+       ns: abd
+
+

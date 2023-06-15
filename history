@@ -1,0 +1,30 @@
+  119  cd kubernetes/
+  120  ls
+  121  git status
+  122  kubectl get pods
+  123  kubectl delete pods pod2pod
+  124  kubectl delete pods podname1
+  125  kubectl delete pods pod2pod2
+  126  kubectl get pods
+  127  kubectl --scale=4 deployments deploy1
+  128  kubectl scale --replicas=4 deployments deploy1
+  129  kubectl get pods
+  130  kubectl get deployments
+  131  kubectl get pods
+  132  kubectl set image cont1=http deployments/deploy1 --record
+  133  kubectl set image deployments/deploy1 cont1=http --record
+  134  kubectl describe pods deploy1
+  135  kubectl rollout undo deployments/deploy1
+  136  kubectl describe deployments deploy1
+  137  kubectl rollout undo deployments/deploy1
+  138  kubectl set image deployments/deploy1 cont1=nginx~ --record
+  139  kubectl describe deployments deploy1
+  140  git status
+  141  git add master.sh
+  142  git restore --stages .
+  143  git restore --stages *
+  144  git restore --stages master.sh
+  145  git status
+  146  git restore --staged master.sh
+  147  git restore --staged NodeSelector.yml
+  148  git status

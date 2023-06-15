@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod2pod2
+spec:
+  containers:
+    - name: cont2
+      image: ubuntu
+      ports:
+       - containerPort: 8080
+
