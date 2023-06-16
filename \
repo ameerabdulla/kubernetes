@@ -1,21 +1,21 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mydeployments
+   name: deploy1
 spec:
-   replicas: 1
-   selector:      # tells the controller which pods to watch/belong to
+   replicas: 2
+   selector:
     matchLabels:
      name: deployment
    template:
      metadata:
-       name: testpod1
+       name: podtest
        labels:
          name: deployment
      spec:
       containers:
-        - name: c00
+        - name: cont1
           image: httpd
+          command: ["/bin/bash", "-c", "while true; do echo Ducat; sleep 5; done"]
           ports:
-          - containerPort: 80
-
+          - containerPort:80
