@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv1
+spec:
+  capacity:
+    storage: 4Gi            # Size of the nfs-server volume
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: slow
+  nfs:
+    path: /home/ubuntu/          # path on which k8-n-4 exposes the nfs mount
+    server: 172.31.37.36   # private ip of worker node 
+
+

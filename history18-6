@@ -1,0 +1,118 @@
+  226  vim emptydir.yml
+  227  kubectl apply -f emptydir.yml
+  228  vim emptydir.yml
+  229  kubectl apply -f emptydir.yml
+  230  kubectl get pods
+  231  ls
+  232  cd kubernetes/
+  233  ls
+  234  vim srv.yml
+  235  mv srv.yml clusterip.yml
+  236  ls
+  237  kubectl get pods
+  238  kubectl get svc
+  239  kubectl get dep
+  240  kubectl get deploy
+  241  kubectl delete pods service1
+  242  ls
+  243  vim emptydir.yml
+  244  kubectl apply -f emptydir.yml
+  245  kubectl get deploy
+  246  kubectl get pods
+  247  kubectl get svc
+  248  kubectl exec service1 -c cont1 -it -- /bin/bash
+  249  kubectl exec service1 -c cont2 -it -- /bin/bash
+  250  exit
+  251  ls
+  252  kubectl delete pods service1
+  253  ls
+  254  s
+  255  vim hostpath.yml
+  256  cd kubernetes/
+  257  kubectl apply -f hostpath.yml
+  258  vim hostpath.yml
+  259  kubectl apply -f hostpath.yml
+  260  vim hostpath.yml
+  261  kubectl apply -f hostpath.yml
+  262  kubectl get pods
+  263  vim hostpath.yml
+  264  kubectl apply -f hostpath.yml
+  265  kubectl delete pods myvolhostpath
+  266  kubectl apply -f hostpath.yml
+  267  kubectl get pods
+  268  cd kubernetes/
+  269  ls
+  270  kubectl get pdos
+  271  kubectl get pods
+  272  kubectl exec myvolhostpath -c cont1 -it -- /bin/bash
+  273  xl
+  274  lx
+  275  ls
+  276  vim emptydir.yml
+  277  vim hostpath.yml
+  278  ls
+  279  cd kubernetes/
+  280  kubectl get pods
+  281  kubectl exec myvolhostpath -c cont1 -it -- /bin/bash
+  282  ls
+  283  cd kubernetes/
+  284  ls
+  285  kubectl exec -it -c cont1 -it -- /bin/bash
+  286  kubectl exec myvolhost -it -c cont1 -it -- /bin/bash
+  287  kubectl exec myvolhostpath -it -c cont1 -it -- /bin/bash
+  288  history
+  289  cat > history18/6
+  290  vim  history18/6
+  291  vim history18
+  292  ls
+  293  kubectl get pods
+  294  kubectl delete pods myvolhostpath
+  295  fdisk -l
+  296  vim pv.yml
+  297  vim pvc.yml
+  298  kubectl apply -f pv.yml
+  299  kubectl apply -f pvc.yml
+  300  kubectl get pvc
+  301  kubectl get pv
+  302  LS
+  303  ls
+  304  cd ..
+  305  ls
+  306  cd kubernetes/
+  307  vim pvc.yml
+  308  vim pvpod.yml
+  309  kubectl apply -f pvpod.yml
+  310  vim pvpod.yml
+  311  vim pv.yml
+  312* vim
+  313  vim pvpod.yml
+  314  kubectl apply -f pvpod.yml
+  315  vim pvpod.yml
+  316  kubectl apply -f pvpod.yml
+  317  ls
+  318  cd ..
+  319  ls
+  320  kubectl get pods
+  321  kubectl exec pod4vol -c cont1 -it -- /bin/nash
+  322  kubectl exec pod4vol -c cont1 -it -- /bin/bash
+  323  kubectl describe pod4vol
+  324  kubectl describe pods pod4vol
+  325  vim pvpod.yml
+  326  ls
+  327  cd kubernetes/
+  328  vim pvpod.yml
+  329  kubectl exec pod4vol -c test -it -- /bin/bash
+  330  ls
+  331  vim pvc.yml
+  332  vim pv.yml
+  333  kubectl delete pods
+  334  kubectl get pods
+  335  kubectl get pv
+  336  kubectl get pvc
+  337  kubectl delete pods pod4vol
+  338  kubectl delete pv pv1\
+  339  kubectl delete pv pv1
+  340  kubectl delete pvc pvc1
+  341  kubectl delete pv pv
+  342  kubectl delete pv pv1
+

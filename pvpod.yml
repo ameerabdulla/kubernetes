@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod4vol
+spec:
+  containers:
+    - name: test
+      image: nginx
+      volumeMounts:
+      - mountPath: "/home/ubuntu/" # Folder in pod mounting nfsclaim
+        name: mypd
+  volumes:
+    - name: mypd             # volume name the container can mount
+      persistentVolumeClaim: # Source of storage
+        claimName: pvc1  # name of pvc created
+
